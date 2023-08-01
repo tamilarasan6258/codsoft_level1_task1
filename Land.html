@@ -1,0 +1,237 @@
+<html>
+    <head>
+        <title>Royal Enfield</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Poppins" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+        <script defer src="app.js"></script>
+
+
+    </head>
+    <body>
+        <section id="header">
+        <div class="head">
+            <div class="logo">
+                <img src="logo2.png" style="width:100px;height: 40px;">
+            </div>
+            <div class="navbar">
+                <div class="dropdown">
+                    <button class="dropbtn">PRODUCTS
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="pro">
+                          <figure>
+                            <img src="01.png" style="width:200px;height: 100px;">
+                            <figcaption><center>Classic 350</center></figcaption>
+                          </figure>
+                          <figure>
+                            <img src="02.png" style="width:200px;height: 100px;">
+                            <figcaption><center>Bullet 350</center></figcaption>
+                          </figure>
+                          <figure>
+                            <img src="03.png" style="width:200px;height: 100px;">
+                            <figcaption><center>Hunter 350</center></figcaption>
+                          </figure>
+                          <figure>
+                            <img src="04.png" style="width:200px;height: 100px;">
+                            <figcaption><center>Thunderbird</center></figcaption>
+                          </figure>
+                          <figure>
+                            <img src="051.png" style="width:200px;height: 100px;">
+                            <figcaption><center>Meteor</center></figcaption>
+                          </figure>
+                        </div>
+                    </div>
+                </div> 
+                <div class="dropdown">
+                    <button class="dropbtn">ROYAL ENFIELD IN INDIA
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#">About Us</a>
+                      <a href="#">Hybrid Technology</a>
+                      <a href="#">Environment</a>
+                      <a href="#">TNGA</a>
+                      <a href="#">ROYAL ENFIELD i-Connect</a>
+                      <a href="#">ROYAL ENFIELD Finance</a>
+                    </div>
+                </div> 
+                <div class="dropdown">
+                    <button class="dropbtn">SERVICES
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#">Service</a>
+                      <a href="#">Safety Recall</a>
+                    </div>
+                </div> 
+                <a href="#">USED BIKES</a>
+                <div class="dropdown">
+                  <button class="dropbtn">MEDIA
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="#">Press Release</a>
+                    <a href="#">Articles/Reviews</a>
+                  </div>
+                </div> 
+                <div class="dropdown">
+                    <button class="dropbtn">MORE
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#">Careers</a>
+                      <a href="#">Become a Dealer</a>
+                      <a href="#">Awards</a>
+                      <a href="#">Customer Stories</a>
+                      <a href="#">Dream Car Contest</a>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <button type="submit">BUY ONLINE</button>
+            <img src="phone.png" style="width: 20px;margin-left: 5px;height: 20px;margin-top: 10px;">
+
+        </div>
+        </section>
+        <section id="slideshow">
+          <div class="image-slideshow">
+            <div class="image fade">
+              <img src="delivery1.jpg">
+              <h1>ROYAL ENFIELD<br><p>Ride Faster & Safer....With ENFIELD</p></h1>
+            </div>        
+            <div class="image fade">
+              <img src="delivery2.jpg">
+              <h1>ROYAL ENFIELD<br><p>Ride Faster & Safer....With ENFIELD</p></h1>
+            </div>   
+            <div class="image fade">
+              <img src="delivery3.jpg">
+              <h1>ROYAL ENFIELD<br><p>Ride Faster & Safer....With ENFIELD</p></h1>
+            </div>      
+        </div>
+
+        </section>
+        <script>
+          let index = 0;
+          displayImages();
+          function displayImages() {
+            let i;
+            const images = document.getElementsByClassName("image");
+            for (i = 0; i < images.length; i++) {
+              images[i].style.display = "none";
+            }
+            index++;
+            if (index > images.length) {
+              index = 1;
+            }
+            images[index-1].style.display = "block";
+            setTimeout(displayImages, 6000); 
+          }
+          
+      </script>
+      <section class="hidden">
+        <section id="menu">
+          <div class="m1" onclick="window.location.href='#'">
+            <center><img src="testdrive.jfif"></center><br>
+            <center><p>Test drive</p></center>
+          </div>
+          <div class="m1" onclick="window.location.href='#'">
+            <center><img src="pricetag.jfif"></center><br>
+          <center><p>Price Range</p></center>
+          </div>
+            <div class="m1" onclick="window.location.href='#'">
+              <center><img src="brochure.jfif"></center><br>
+          <center><p>Brochure</p></center>
+          </div>
+          <div class="m1" onclick="window.location.href='#'">
+            <center><img src="bike.jfif"></center><br>
+          <center><p>Find a Dealer</p></center>
+          </div>
+          <div class="m1" onclick="window.location.href='#'">
+            <center><img src="exchange.png"></center><br>
+          <center><p>Exchange Cars</p></center>
+          </div>
+        </section>
+      </section>
+      <section class="hidden">
+      <section id="price">
+        <center>
+        <h2>Discover the ROYAL ENFIELD Range</h2>
+        <div class="p1">
+          <figure onclick="window.location.href='#'">
+            <img src="01.png" style="width:200px;height: 100px;">
+            <figcaption><center> classic 350 <br><p>INR 11,50,000</p></center></figcaption>
+          </figure>
+          <figure onclick="window.location.href='#'">
+            <img src="02.png" style="width:200px;height: 100px;">
+            <figcaption><center>Bullet 350 <br><p>INR 11,75,000</p></center></figcaption>
+          </figure>
+          <figure onclick="window.location.href='#'">
+            <img src="03.png" style="width:200px;height: 100px;">
+            <figcaption><center>Hunter<br><p>INR 11,85,000</p></center></figcaption>
+          </figure>
+          <figure onclick="window.location.href='#'">
+            <img src="04.png" style="width:200px;height: 100px;">
+            <figcaption><center>Thunder bird <br><p>INR 12,50,000</p></center></figcaption>
+          </figure>
+          <figure onclick="window.location.href='#'">
+            <img src="051.png" style="width:200px;height: 100px;">
+            <figcaption><center>Meteor <br><p>INR 12,00,000</p></center></figcaption>
+          </figure>
+        </div>
+      </center>
+      </section>
+    </section>
+    <section class="hidden">
+      <section id="footer">
+        <div class="contact">
+          <h1>Find ROYAL ENFIELD</h1><br><br>
+          <div class="det">
+              <div class="d">
+                  <img src="location.webp" style="width:30px">
+              </div>
+              <div class="d">
+                  <p style="margin-left: 15px;">Location : Tamilnadu</p><br>
+              </div>
+
+          </div>
+          <div class="det">
+              <div class="d">
+                  <img src="phone.png" style="width:30px">
+              </div>
+              <div class="d">
+                  <p style="margin-left: 15px;">Phone : +91 094759264</p><br>
+              </div>
+          </div>
+          <div class="det">
+              <div class="d">
+                  <img src="email.png" style="width:30px">
+              </div>
+              <div class="d">
+                  <p style="margin-left: 15px;">E-Mail : Royal@gmail.com</p><br>
+              </div>
+          </div>
+          <div class="det">
+              <div class="d">
+                  <img src="instra.png" style="width:30px">
+              </div>
+              <div class="d">
+                  <p style="margin-left: 15px;">Instagram : bike_enfield</p><br>
+              </div>
+          </div>
+         
+         
+      </div>
+      <div class="lg">
+        <img src="royal.png" style="width:200px;height: 200px;">
+      </div>
+      </section>
+    </section>
+    </body>
+</html>
